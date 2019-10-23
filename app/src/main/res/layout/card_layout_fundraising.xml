@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FundraisingFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_fundraising"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/cardImage_Fundraising"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/cardTitle_Fundraising"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardImage_Fundraising"
+                android:padding="5dp"
+                android:text="Card Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/cardTitle_Fundraising"
+                android:id="@+id/cardDescription_Fundraising"
+                android:paddingHorizontal="5dp"
+                android:text="Lorem Ipsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <Button
+                android:id="@+id/button_layout_fundraising"
+                android:layout_below="@id/cardDescription_Fundraising"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:text="Sustine acest proiect"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/round_button_green"
+                />
+
+
+            <ProgressBar
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/cardProgressDialog"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

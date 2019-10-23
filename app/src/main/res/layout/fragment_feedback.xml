@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FeedbackFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/header_noutati"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Feedback"
+            app:titleTextColor="@color/colorWhite"
+            app:titleMargin="5dp"
+            app:subtitle="LIGA PROFESIONISTA DE FOTBAL"
+            app:subtitleTextColor="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </android.support.v7.widget.Toolbar>
+
+        <Spinner
+            android:id="@+id/spinner_subiect"
+            android:layout_below="@id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_stadion"
+            android:layout_below="@id/spinner_subiect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/Nume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/spinner_stadion"
+            android:ems="14"
+            android:inputType="textPersonName"
+            android:hint="Nume"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Nume"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColor="@color/colorGrey"
+            android:layout_margin="5dp"/>
+
+        <EditText
+            android:id="@+id/Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:ems="14"
+            android:inputType="date"
+            android:hint="Data"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/detalii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Data"
+            android:layout_centerHorizontal="true"
+            android:ems="14"
+            android:inputType="textMultiLine"
+            android:hint="Detalii"
+            android:textColor="@color/colorGrey"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/buton_imagini"
+            android:layout_below="@id/detalii"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button_green"
+            android:text="Adauga Imagini"
+            android:textColor="@color/colorWhite"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:id="@+id/buton_send"
+            android:layout_below="@id/buton_imagini"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button_green"
+            android:text="Trimite"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="5dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

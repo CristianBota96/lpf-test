@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProdusFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/header_noutati"
+            app:navigationIcon="@drawable/back_arrow"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Shop"
+            app:titleTextColor="@color/colorWhite"
+            app:titleMargin="5dp"
+            app:subtitle="LIGA PROFESIONISTA DE FOTBAL"
+            app:subtitleTextColor="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/recyclerView_produs"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/Alege_marimea"
+            android:layout_below="@+id/recyclerView_produs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALEGE MARIMEA"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/size_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Alege_marimea"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:text="SIZE CHART"
+            android:textSize="8sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView_marimi"
+            android:layout_below="@+id/Alege_marimea"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="10dp"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Personalizare_Tricou"
+            android:layout_below="@+id/recycleView_marimi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERSONALIZEAZA TRICOUL"
+            android:textStyle="bold"
+            android:layout_marginVertical="2dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/Numele_Jucatorului"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Personalizare_Tricou"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:hint="Adauga un Jucator"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/Adauga_nume_numar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Numele_Jucatorului"
+            android:ems="15"
+            android:inputType="textPersonName"
+            android:hint="Adauga un Nume si un Numar"
+            android:textColor="@color/colorGrey"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/Adauga_in_cos"
+            android:layout_below="@id/Adauga_nume_numar"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ractangle"
+            android:text="ADAUGA IN COS"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="5dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FundraisingFragment">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_calendar"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        app:cardMaxElevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="7sp"
+                android:text="test"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/etapa"
+                android:layout_below="@+id/date"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:textSize="7sp"
+                android:text="ETAPA 10"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/liga"
+                android:layout_below="@+id/etapa"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:textSize="7sp"
+                android:text="LIGA 1 BETANO"
+                android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cardImage_echipa1"
+                    android:layout_width="29dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fcsb"
+                    android:layout_toLeftOf="@+id/vs"
+                    android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/vs"
+                android:layout_width="29dp"
+                android:layout_height="19dp"
+                android:layout_alignTop="@+id/date"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="VS"
+                android:textAlignment="center"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cardImage_echipa2"
+                    android:layout_width="29dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fcsb"
+                    android:layout_toEndOf="@+id/vs"
+                    android:scaleType="centerCrop" />
+
+
+            <Button
+                android:id="@+id/cumpara_bilet"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_below="@id/cardImage_echipa1"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:layout_centerHorizontal="true"
+                android:text="Cumpara Bilet"
+                android:textColor="@color/colorGrey"
+                />
+
+            <TextView
+                android:id="@+id/acasa"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/cardImage_echipa2"
+                android:layout_marginTop="10dp"
+                android:textAlignment="textEnd"
+                android:textSize="7sp"
+                android:text="ACASA"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/acasa_echipa"
+                android:layout_below="@+id/acasa"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/cardImage_echipa2"
+                android:textAlignment="textEnd"
+                android:textSize="7sp"
+                android:text="FCSB"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

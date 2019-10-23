@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/stiri_image"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_weight="70"
+        android:scaleType="centerCrop"
+        android:src="@drawable/viitorul"/>
+
+    <TextView
+        android:id="@+id/title_stiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="217dp"
+        android:paddingHorizontal="20dp"
+        android:text="Liga 1 Betano"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/subtitle_stiri"
+        android:layout_below="@+id/title_stiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cifrele Viitorului Constanta"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:paddingHorizontal="20dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/stiri_tag"
+        android:layout_below="@id/stiri_image"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:background="@color/colorGreen"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/stiri_tag"
+        android:layout_marginStart="28dp"
+        android:text="Stiri"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/data_stiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/stiri_tag"
+        android:layout_marginStart="72dp"
+        android:text="11.06.2018"
+        android:textColor="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/text_principal"
+        android:layout_below="@+id/stiri_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum"
+        android:layout_margin="10dp"
+        />
+
+
+
+</RelativeLayout>

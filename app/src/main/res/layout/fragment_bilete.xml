@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BileteFragment">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/background1"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/bilet_echipa1"
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:layout_toLeftOf="@+id/bilete_vs"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/fcsb" />
+                <TextView
+                    android:id="@+id/titlu_echipa1"
+                    android:layout_below="@+id/bilet_echipa1"
+                    android:layout_toLeftOf="@+id/bilete_vs"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="fcsb"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/bilete_vs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="45dp"
+                    android:text="VS"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/bilet_echipa2"
+                    android:layout_width="55dp"
+                    android:layout_height="65dp"
+                    android:layout_toEndOf="@+id/bilete_vs"
+                    android:layout_alignTop="@+id/bilet_echipa1"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/cfr" />
+                <TextView
+                    android:id="@+id/titlu_echipa2"
+                    android:layout_below="@+id/bilet_echipa2"
+                    android:layout_toRightOf="@+id/bilete_vs"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="cfr"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/bilet_data"
+                    android:layout_below="@+id/titlu_echipa1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Marti 15 Mai 2018 20:45"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/bilet_locul"
+                    android:layout_below="@+id/bilet_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="ARENA NATIONALA BUCURESTI"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/alege_biletele"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:text="ALEGE BILETELE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGreen"
+            />
+        <View
+            android:id="@+id/linie_alege_biletele"
+            android:layout_below="@id/alege_biletele"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="5dp"
+            />
+
+        <ListView
+            android:id="@+id/listView_bilete"
+            android:layout_below="@id/linie_alege_biletele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/buton_cumpara_bilet"
+            android:layout_below="@id/listView_bilete"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button_green"
+            android:text="Cumpara"
+            android:textColor="@color/colorWhite"
+
+            />
+
+</RelativeLayout>

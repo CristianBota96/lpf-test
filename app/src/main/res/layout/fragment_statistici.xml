@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticiFragment"
+    android:background="@drawable/rectangle57"
+    >
+    <TextView
+        android:id="@+id/clasamente"
+        android:layout_below="@+id/linie_detalii_2"
+        android:layout_centerHorizontal="true"
+        android:text="CLASAMENT"
+        android:fontFamily="@font/roboto_light"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+        android:layout_marginVertical="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/club"
+        android:layout_below="@id/clasamente"
+        android:layout_marginBottom="10dp"
+        android:text="Club"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mj"
+        android:layout_toEndOf="@id/clasamente"
+        android:layout_below="@id/clasamente"
+        android:text="MJ"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/pct"
+        android:layout_toEndOf="@id/mj"
+        android:layout_below="@id/clasamente"
+        android:layout_marginHorizontal="5dp"
+        android:text="PCT"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/gm"
+        android:layout_toEndOf="@id/pct"
+        android:layout_below="@id/clasamente"
+        android:layout_marginHorizontal="5dp"
+        android:text="GM"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/gp"
+        android:layout_toEndOf="@id/gm"
+        android:layout_below="@id/clasamente"
+        android:layout_marginHorizontal="5dp"
+        android:text="GP"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content" />
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_below="@+id/club"
+        android:id="@+id/list_clasament_statistici"
+        android:layout_width="wrap_content"
+        android:layout_height="800dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        >
+    </ListView>
+
+</RelativeLayout>

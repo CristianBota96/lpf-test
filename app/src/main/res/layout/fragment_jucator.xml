@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".JucatorFragment">
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar_jucator"
+          android:layout_width="match_parent"
+          android:layout_height="184dp"
+          android:background="@color/colorGreen">
+
+          <ListView
+              android:id="@+id/listView_jucator"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+          </ListView>
+
+      </android.support.v7.widget.Toolbar>
+
+
+      <TextView
+          android:id="@+id/text_jucator"
+          android:layout_below="@+id/toolbar_jucator"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginTop="10dp"
+          android:text="Cluburi"
+          android:textSize="14sp"
+          android:textStyle="bold"
+          android:textColor="@color/colorGreen"
+          />
+      <View
+          android:id="@+id/linie_text_jucator"
+          android:layout_below="@id/text_jucator"
+          android:layout_width="match_parent"
+          android:layout_marginHorizontal="10dp"
+          android:layout_height="1dp"
+          android:background="@android:color/darker_gray"
+          />
+
+      <TextView
+          android:id="@+id/detalii_jucator"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_below="@+id/linie_text_jucator"
+          android:layout_marginTop="10dp"
+          android:layout_marginHorizontal="10dp"
+          android:text="Eduard Stancioiu este un portar nascut pe 3 martie 1981, in Bucuresti. Acesta si-a inceput cariera la Sportul Studentesc, club pentru care a evoluat intre 1998 si 2006, cand s-a transferat la CFR Cluj. Alaturi de ardeleni, goalkeeperul a cucerit 2 titluri de campion, 3 Cupe ale Romaniei si o Super Cupa a Romaniei. In 2014, Eduard a ajuns la ASA Tirgu-Mures, echipa in tricoul careia a castigat Super Cupa Romaniei anul trecut, chiar impotriva Stelei. De asemenea, acesta are si o selectie in echipa nationala de seniori." />
+
+  </RelativeLayout>
+
+</ScrollView>

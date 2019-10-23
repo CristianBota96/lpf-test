@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp">
+
+
+            <TextView
+                android:id="@+id/text_recycle"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_marginHorizontal="20dp"
+                android:text="All"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+    <View
+        android:id="@+id/linie_shop"
+        android:layout_width="1dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="10dp"
+        android:layout_toEndOf="@+id/text_recycle"
+        android:background="@android:color/darker_gray" />
+
+
+</RelativeLayout>

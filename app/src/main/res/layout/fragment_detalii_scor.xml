@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle57"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetaliiScorFragment">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/header_noutati"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="STATISTICI"
+            app:titleTextColor="@color/colorWhite"
+            app:titleMargin="5dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/ic_close" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <include layout="@layout/detalii_scor"
+                            android:id="@+id/detalii_scor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            />
+                        <View
+                            android:id="@+id/linie_detalii_scor"
+                            android:layout_below="@id/detalii_scor"
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"
+                            />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/statistici"
+                            android:layout_below="@+id/detalii_scor"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginVertical="20dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+                        <View
+                            android:id="@+id/linie_detalii_2"
+                            android:layout_below="@+id/statistici"
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_height="1dp"
+                            android:background="@android:color/white"
+                            />
+                        <TextView
+                            android:id="@+id/clasamente"
+                            android:layout_below="@+id/linie_detalii_2"
+                            android:layout_centerHorizontal="true"
+                            android:text="CLASAMENT"
+                            android:fontFamily="@font/roboto_light"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/club"
+                            android:layout_below="@id/clasamente"
+                            android:layout_marginBottom="10dp"
+                            android:text="Club"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="14dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/mj"
+                            android:layout_toEndOf="@id/clasamente"
+                            android:layout_below="@id/clasamente"
+                            android:text="MJ"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/pct"
+                            android:layout_toEndOf="@id/mj"
+                            android:layout_below="@id/clasamente"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="PCT"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/gm"
+                            android:layout_toEndOf="@id/pct"
+                            android:layout_below="@id/clasamente"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="GM"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/gp"
+                            android:layout_toEndOf="@id/gm"
+                            android:layout_below="@id/clasamente"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="GP"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:layout_width="24dp"
+                            android:layout_height="wrap_content" />
+
+                        <ListView
+                            android:layout_below="@+id/club"
+                            android:id="@+id/list_scor_statistici"
+                            android:layout_width="wrap_content"
+                            android:layout_height="700dp"
+                            android:layout_centerHorizontal="true"
+                            >
+                        </ListView>
+
+                </RelativeLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

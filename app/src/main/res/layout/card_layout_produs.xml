@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    tools:context=".HomeFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="1dp"
+        app:contentPaddingRight="10dp"
+        app:contentPaddingLeft="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cardTitle_Produs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Card Title"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/cardTitle_Produs"
+                android:id="@+id/cardDescription_Produs"
+                android:paddingHorizontal="5dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:text="Lorem Ipsum"
+                android:layout_marginHorizontal="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@id/linie_produs"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/linie_produs"
+                android:layout_below="@+id/cardTitle_Produs"
+                android:layout_width="0.0dp"
+                android:layout_toRightOf="@+id/cardTitle_Produs"
+                android:layout_marginVertical="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="22dp"
+                android:background="@android:color/darker_gray"
+                />
+
+            <TextView
+                android:layout_below="@+id/cardTitle_Produs"
+                android:id="@+id/cardPriceProdus"
+                android:paddingHorizontal="5dp"
+                android:layout_marginTop="5dp"
+                android:text="$50"
+                android:layout_marginHorizontal="5dp"
+                android:layout_toRightOf="@+id/linie_produs"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/cardImage_Produs"
+                android:layout_below="@id/cardPriceProdus"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
